@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/api/index" },
+    { "source": "/playlist.m3u", "destination": "/api/index/playlist.m3u" },
+    { "source": "/getlink/:id", "destination": "/api/index/getlink/:id" }
+  ]
+}
