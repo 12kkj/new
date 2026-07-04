@@ -1,0 +1,5 @@
+- [CSA v3 Architecture](csa-v3-arch.md) — single-learner Next.js 15 app; `next` binary missing until `installLanguagePackages` runs; always check before restart
+- [CSA auth design](csa-auth-design.md) — login screen shown by default (showOnboarding=true); device-auth skips it only after JSON validation; "kkj" is intentional master-password bypass per owner spec; adminSession must be reset in logout+factory-reset to prevent privilege carry-over
+- [Home icon shadowing bug](home-icon-shadow.md) — page component named `Home` shadows the Lucide `Home` icon import; caused recursive self-render + all hydration/loop errors
+- [Transcript source](transcript-source.md) — transcripts fetched via Cloudflare Worker proxy (not youtube-transcript-plus); server-side at /api/tutor action=get_transcript
+- [Wikipedia search endpoint](wikipedia-search-endpoint.md) — old `/api/rest_v1/page/search/title` 404s; use `/w/rest.php/v1/search/page` with `p.key` for slug
